@@ -1,0 +1,131 @@
+@media (max-width: 1200px) {
+  .price__gift span {
+    display: block;
+  }
+  .step__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .step__item {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1022px) {
+  .promo__info {
+    max-width: 550px;
+  }
+  .promo__title {
+    font-size: 42px;
+  }
+  .promo__list {
+    display: block;
+  }
+  .promo__item {
+    margin-bottom: 35px;
+  }
+  .call__wrap {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+  .price__wrap {
+    display: block;
+  }
+  .price__content {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .price__form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 766px) {
+  .step {
+    padding-bottom: 50px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .price {
+    padding-top: 30px;
+  }
+  .call__wrap {
+    padding-left: 15px;
+    padding-bottom: 190px;
+    text-align: center;
+    
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .call {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .form__block {
+    display: block;
+    width: 100%;
+  }
+  .form__block .form__field {
+    margin-right: 0;
+  }
+  .form__field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .price__form,
+  .step__item,
+  .price__text,
+  .price__sum,
+  .form__btn {
+    width: 100%;
+  }
+  .price__text {
+    margin-bottom: 10px;
+  }
+  .price__line {
+    flex-wrap: wrap;
+    padding: 10px;
+    height: auto;
+  }
+  .price__table table,
+  .price__table table tbody,
+  .price__table table td {
+    display: block;
+  }
+  .price__table table tr {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    background-color: #f2f7fb;
+  }
+  .price__table table td {
+    padding: 0;
+    height: auto;
+    
+    &:first-child {
+      width: 100%;
+      border-radius: 0;
+      margin-bottom: 10px;
+    }
+    &:nth-child(2),
+    &:last-child {
+      width: 50%;
+      border-radius: 0
+    }
+  }
+  .price__gift {
+    padding: 10px;
+    padding-top: 80px;
+    text-align: center;
+  }
+  .price__gift::before {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
