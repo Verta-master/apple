@@ -1,0 +1,85 @@
+.form {
+  width: 100%;
+}
+.form__block {
+  display: flex;
+  align-items: center;
+  max-width: 515px;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  
+  .form__field {
+    margin-right: 13px;
+  }
+}
+.form__field {
+  width: 230px;
+  position: relative;
+  border: 1px solid #1B3A51;
+  border-radius: 12px;
+  padding-left: 55px;
+  padding-right: 10px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.form__input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0);
+  
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+.form__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: #1B3A51;
+  background-image: linear-gradient(269.65deg, rgba(47, 80, 255, 0.3) 0.26%, rgba(47, 80, 255, 0) 98.44%);
+  border-radius: 12px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-image: none;
+  }
+  
+  &--red {
+    background-color: #DB133C;
+    background-image: none;
+    
+    &:hover,
+    &:active {
+      opacity: 0.75;
+      .transition();
+    }
+  }
+}
